@@ -20,7 +20,7 @@ console.log(a);
 
    }
    let res=man("Hsanainfotech");
-   console.log(res);
+   //console.log(res);
 
 ////////////////// add //////////////////
 
@@ -29,7 +29,7 @@ console.log(a);
      return a + b ;
  
     }
-    console.log(add(3,5));
+    //console.log(add(3,5));
 
  //////////////////// sub /////////////////////
 
@@ -38,7 +38,7 @@ console.log(a);
          return a - b ;
      
         }
-        console.log(sub(3,5));
+       // console.log(sub(3,5));
 
 ///////////////////// square ////////////////
         const squ = (a) =>
@@ -46,7 +46,7 @@ console.log(a);
              return a*a ;
          
             }
-            console.log(squ(5));
+           // console.log(squ(5));
 
 /////////////////// cube ////////////////////////
 const cube= (a) =>
@@ -54,9 +54,30 @@ const cube= (a) =>
      return a*a*a;
  
     }
-    console.log(cube(3));
+    //console.log(cube(3));
 
 ///////////////// simple index /////////////////
 const add2 = (a,b) => a + b ;
-console.log(add2(3,5));
+//console.log(add2(3,5));
 
+///////////////// asynchrnous //////////////////////
+console.log("Start");
+console.log("Middle");
+console.log("End");
+
+console.log("Start")
+setTimeout(()=>
+{
+   console.log("This is delied message")
+}, 2000);
+console.log("End")
+
+////////////////// synchrnous ///////////////
+function syncTask()
+{
+   console.log("Task 1");
+   console.log("Task 2");
+}
+console.log("Before");
+syncTask();
+console.log("After");
